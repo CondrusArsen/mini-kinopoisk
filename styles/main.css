@@ -1,0 +1,223 @@
+:root {
+  --bg: #f4f4f8;
+  --text: #222;
+  --card-bg: #fff;
+  --accent: #e91e63;
+  --muted: #666;
+  --header-bg: #222;
+  --header-text: #fff;
+}
+
+body.dark {
+  --bg: #1e1e1e;
+  --text: #eee;
+  --card-bg: #2c2c2c;
+  --accent: #ff4081;
+  --muted: #aaa;
+  --header-bg: #111;
+  --header-text: #fff;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background-color: var(--bg);
+  color: var(--text);
+  transition: all 0.3s ease;
+}
+
+header, footer {
+  background-color: var(--header-bg);
+  color: var(--header-text);
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 0;
+  margin: 10px 0 0 0;
+}
+
+nav a {
+  color: var(--header-text);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.theme-toggle {
+  margin-top: 15px;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.main-intro {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.intro-buttons {
+  margin-top: 30px;
+}
+
+.btn {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 12px 22px;
+  background-color: var(--accent);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #c2185b;
+}
+
+.movie-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  padding: 40px;
+}
+
+.movie-card {
+  background-color: var(--card-bg);
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.08);
+  transition: transform 0.3s;
+}
+
+.movie-card:hover {
+  transform: scale(1.02);
+}
+
+.movie-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.movie-card h3 {
+  margin: 10px 0 5px;
+  font-size: 18px;
+}
+
+.movie-card p {
+  margin: 6px 0;
+  color: var(--muted);
+}
+
+.description {
+  font-style: italic;
+}
+
+.movie-details {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: var(--card-bg);
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.movie-details img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.movie-details h2 {
+  margin-top: 20px;
+}
+
+.movie-full {
+  font-size: 16px;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  padding: 30px;
+  background-color: var(--card-bg);
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  max-width: 1000px;
+  margin: 40px auto;
+  flex-wrap: wrap;
+}
+
+.movie-full img {
+  max-width: 300px;
+  border-radius: 10px;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+
+.movie-full .details-text {
+  flex: 1;
+  min-width: 250px;
+}
+
+.movie-full .slogan {
+  font-style: italic;
+  color: var(--accent);
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.movie-full .fact {
+  margin-top: 20px;
+  font-style: italic;
+  color: var(--muted);
+}
+
+.nav-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.nav-buttons button {
+  flex: 1;
+  padding: 12px;
+  background-color: var(--accent);
+  border: none;
+  color: white;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.nav-buttons button:hover {
+  background-color: #c2185b;
+}
+
+@media (max-width: 768px) {
+  .movie-full {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .movie-full img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .movie-full .details-text {
+    width: 100%;
+  }
+}
