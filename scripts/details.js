@@ -23,29 +23,29 @@ if (movieId && detailsContainer) {
       <div class="details-text">
         <h2>${movie.title} (${movie.year})</h2>
         ${movie.slogan ? `<p class="slogan">"${movie.slogan}"</p>` : ""}
-        <p><strong>Жанры:</strong> ${movie.genres.join(", ")}</p>
-        <p><strong>Режиссёр:</strong> ${movie.director}</p>
-        ${movie.writer ? `<p><strong>Сценарист:</strong> ${movie.writer}</p>` : ""}
-        ${movie.composer ? `<p><strong>Композитор:</strong> ${movie.composer}</p>` : ""}
-        <p><strong>Актёры:</strong> ${movie.actors.join(", ")}</p>
-        <p><strong>Страна:</strong> ${movie.country}</p>
-        <p><strong>Продолжительность:</strong> ${movie.duration}</p>
-        ${movie.releaseDate ? `<p><strong>Премьера:</strong> ${movie.releaseDate}</p>` : ""}
-        ${movie.budget ? `<p><strong>Бюджет:</strong> ${movie.budget}</p>` : ""}
-        <p><strong>Моя оценка:</strong> ${movie.myRating}/10</p>
-        <p><strong>Кинопоиск:</strong> ${movie.kpRating}</p>
+        <p><strong>Genres:</strong> ${movie.genres.join(", ")}</p>
+        <p><strong>Director:</strong> ${movie.director}</p>
+        ${movie.writer ? `<p><strong>Writer:</strong> ${movie.writer}</p>` : ""}
+        ${movie.composer ? `<p><strong>Composer:</strong> ${movie.composer}</p>` : ""}
+        <p><strong>Actors:</strong> ${movie.actors.join(", ")}</p>
+        <p><strong>Country:</strong> ${movie.country}</p>
+        <p><strong>Duration:</strong> ${movie.duration}</p>
+        ${movie.releaseDate ? `<p><strong>Release date:</strong> ${movie.releaseDate}</p>` : ""}
+        ${movie.budget ? `<p><strong>Budget:</strong> ${movie.budget}</p>` : ""}
+        <p><strong>My rating:</strong> ${movie.myRating}/10</p>
+        <p><strong>Kinopoisk:</strong> ${movie.kpRating}</p>
         <p class="description">${movie.description}</p>
-        ${movie.fact ? `<p class="fact"><em>Интересный факт:</em> ${movie.fact}</p>` : ""}
+        ${movie.fact ? `<p class="fact"><em>Interesting fact:</em> ${movie.fact}</p>` : ""}
 
         <div class="nav-buttons">
-          ${prev ? `<button onclick="navigateTo('${prev.title}', '${prev.type}')">← ${prev.title}</button>` : ""}
-          ${next ? `<button onclick="navigateTo('${next.title}', '${next.type}')">${next.title} →</button>` : ""}
+          ${prev ? `<button onclick="navigateTo('${prev.title}', '${prev.type}')">&larr; ${prev.title}</button>` : ""}
+          ${next ? `<button onclick="navigateTo('${next.title}', '${next.type}')">${next.title} &rarr;</button>` : ""}
         </div>
       </div>
     </div>
     `;
   } else {
-    detailsContainer.innerHTML = "<p>Фильм или сериал не найден.</p>";
+    detailsContainer.innerHTML = "<p>Movie or series not found.</p>";
   }
 }
 

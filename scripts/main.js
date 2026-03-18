@@ -1,8 +1,6 @@
-
 const listContainer = document.getElementById("movie-list");
 const isFilmPage = location.pathname.includes("films.html");
 const isSeriesPage = location.pathname.includes("series.html");
-
 
 if (listContainer) {
   const type = isFilmPage ? "film" : isSeriesPage ? "series" : null;
@@ -16,9 +14,9 @@ if (listContainer) {
       card.innerHTML = `
         <img src="assets/img/${movie.image}" alt="${movie.title}">
         <h3>${movie.title} (${movie.year})</h3>
-        <p><strong>Жанры:</strong> ${movie.genres.join(", ")}</p>
-        <p><strong>Моя оценка:</strong> ${movie.myRating}/10</p>
-        <p><strong>Кинопоиск:</strong> ${movie.kpRating}</p>
+        <p><strong>Genres:</strong> ${movie.genres.join(", ")}</p>
+        <p><strong>My rating:</strong> ${movie.myRating}/10</p>
+        <p><strong>Kinopoisk:</strong> ${movie.kpRating}</p>
         <p class="description">${movie.description}</p>
       `;
 
@@ -31,7 +29,6 @@ if (listContainer) {
   }
 }
 
-
 const toggleButton = document.getElementById("theme-toggle");
 if (toggleButton) {
   toggleButton.addEventListener("click", () => {
@@ -39,7 +36,6 @@ if (toggleButton) {
     localStorage.setItem("theme", document.body.classList.contains("dark") ? "dark" : "light");
   });
 
-  
   const savedTheme = localStorage.getItem("theme");
   if (savedTheme === "dark") {
     document.body.classList.add("dark");

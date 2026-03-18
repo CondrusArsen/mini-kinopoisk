@@ -1,58 +1,54 @@
-# 🎬 MiniКинопоиск
+# MiniKinopoisk
 
-Интерактивный мини-сайт с личной подборкой любимых фильмов и сериалов. Реализован как учебный фронтенд-проект с многостраничной структурой, фильтрацией, светлой/тёмной темой и подробными карточками.
+An interactive mini website with a personal selection of favorite movies and TV series. It was built as a frontend learning project with a multi-page structure, filtering, a light/dark theme, and detailed movie cards.
 
-## 🚀 Возможности
+## Features
 
-- 📁 Категории: Фильмы и Сериалы — на отдельных страницах
-- 📋 Отображение карточек с обложкой, жанрами, оценкой и кратким описанием
-- 📖 Подробная страница каждого фильма/сериала с режиссёром, актёрами, фактами и навигацией
-- 🌗 Поддержка светлой и тёмной темы (по кнопке)
-- ⬅️➡️ Переключение между соседними карточками прямо в `details.html`
-- 📱 Адаптивная вёрстка (работает на телефонах)
+- Separate pages for movies and TV series
+- Cards with posters, genres, ratings, and short descriptions
+- A dedicated details page for each movie or series with director, cast, facts, and navigation
+- Light and dark theme toggle
+- Previous / next navigation directly inside `details.html`
+- Responsive layout for mobile devices
 
-## 📁 Структура проекта
+## Project Structure
 
 ```text
 project/
-├── data/
-│   └── movies.js             # Массив с описаниями фильмов и сериалов
-├── scripts/
-│   ├── main.js               # Отображение карточек на страницах фильмов/сериалов
-│   └── details.js            # Генерация подробной информации о каждом фильме/сериале
-├── styles/
-│   └── main.css              # Общие стили и темы
-├── assets/
-│   └── img/
-│       ├── *.jpg             # Обложки фильмов и сериалов
-│       └── demo.gif          # Гифка с демонстрацией проекта
-├── index.html                # Главная страница
-├── films.html                # Страница с фильмами
-├── series.html               # Страница с сериалами
-└── details.html              # Детальная страница карточки
+|-- data/
+|   `-- movies.js             # Array with movie and series descriptions
+|-- scripts/
+|   |-- main.js               # Renders cards on the movies / series pages
+|   `-- details.js            # Builds the detailed page for each title
+|-- styles/
+|   `-- main.css              # Shared styles and theme rules
+|-- assets/
+|   `-- img/
+|       |-- *.jpg             # Movie and series posters
+|       `-- demo.gif          # Project demo GIF
+|-- index.html                # Home page
+|-- films.html                # Movies page
+|-- series.html               # Series page
+`-- details.html              # Details page
 ```
 
-
-
-## 🔧 Технологии
+## Technologies
 
 - HTML5
-- CSS3 (Grid, Flexbox, переменные)
+- CSS3 (Grid, Flexbox, variables)
 - JavaScript (Vanilla JS)
 - Git / GitHub
 
-## 📸 Работа проекта
+## Demo Preview
 
-![Демонстрация MiniКинопоиска](./assets/demo.gif)
+![MiniKinopoisk demo](./assets/demo.gif)
 
-## 🔗 Демо
+## Live Demo
 
-[Открыть сайт через GitHub Pages](https://condrusarsen.github.io/mini-kinopoisk/)
+[Open the site on GitHub Pages](https://condrusarsen.github.io/mini-kinopoisk/)
 
----
+## Author
 
-## 🧑‍💻 Автор
+**Arseniy Atrokhov**
 
-**Арсений Атрохов**  
-_Самостоятельный учебный проект, реализованный в рамках изучения фронтенда и UX/UI._
-
+_An independent learning project built while studying frontend development and UX/UI._
