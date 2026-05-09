@@ -8,9 +8,19 @@ It started as a simple learning project and was improved into a more polished Va
 
 [Open the site on GitHub Pages](https://condrusarsen.github.io/mini-kinopoisk/)
 
-## Preview
+## Screenshots
 
-![Mini Movie Journal demo](./assets/demo.gif)
+### Home
+
+![Mini Movie Journal home page](./assets/screenshots/home.png)
+
+### Movies
+
+![Mini Movie Journal movies page](./assets/screenshots/movies.png)
+
+### Details
+
+![Mini Movie Journal details page](./assets/screenshots/details.png)
 
 ## Features
 
@@ -39,9 +49,12 @@ It started as a simple learning project and was improved into a more polished Va
 ```text
 project/
 |-- assets/
-|   |-- demo.gif
-|   `-- img/
-|       `-- *.jpg
+|   |-- img/
+|   |   `-- *.jpg
+|   `-- screenshots/
+|       |-- details.png
+|       |-- home.png
+|       `-- movies.png
 |-- data/
 |   `-- movies.js
 |-- scripts/
